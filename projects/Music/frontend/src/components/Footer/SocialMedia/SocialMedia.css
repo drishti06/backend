@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  padding: 10px;
+  gap: 5rem;
+  width: 100%;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  background-color: black;
+}
+
+.socials-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials-right {
+  display: flex;
+  gap: 1rem;
+}

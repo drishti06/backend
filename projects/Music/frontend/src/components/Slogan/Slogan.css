@@ -1,0 +1,26 @@
+.slogan {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* background: url("../../images/drums.jpg"); */
+}
+
+.slogan > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.slogan > h1 {
+  z-index: 1;
+  width: 55%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+}

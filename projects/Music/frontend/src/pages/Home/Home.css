@@ -1,0 +1,258 @@
+.home {
+  background-color: #8154f7;
+  color: white;
+  width: 100%;
+}
+
+.home-left,
+.home-center,
+.home-right {
+  flex-grow: 1;
+}
+
+.home-top {
+  position: relative;
+  height: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-left {
+  width: 15%;
+  display: flex;
+  position: relative;
+  height: 100%;
+  /* border: 2px solid white; */
+}
+
+.home-left > img {
+  /* border: 2px solid red; */
+  width: 350px;
+}
+
+.home-center {
+  /* border: 2px solid white; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 1rem;
+  width: 70%;
+}
+
+.heading > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+.title-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-button > button {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  background-color: white;
+  color: #8154f7;
+  border-radius: 7px;
+  border: none;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.title-search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 27px;
+  border-radius: 26px;
+  background-color: white;
+}
+
+.title-search > input {
+  background-color: transparent;
+  border: none;
+  width: 90%;
+  color: #9c9c9c;
+  font-size: 15px;
+}
+
+.title-search > input[type="text"]:focus {
+  outline: transparent;
+}
+
+.title-search > svg {
+  color: #9c9c9c;
+  font-size: 18px;
+}
+
+.home-right {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-right > img {
+  border-radius: 17px;
+}
+
+.home-right > :nth-child(1) {
+  position: relative;
+  bottom: 40px;
+}
+
+.home-right > :nth-child(2) {
+  position: relative;
+  top: 50px;
+}
+
+.home-right > :nth-child(1) {
+  position: relative;
+}
+
+.home-right > :nth-child(2) {
+  position: relative;
+  bottom: -100%;
+}
+
+.home-between {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genres {
+  /* border: 2px solid red; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.genres > :nth-child(1) {
+  font-weight: 600;
+}
+
+.genre-type {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.genre-type > :nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+
+.genre-type > :nth-child(2) {
+  display: flex;
+  gap: 10px;
+}
+
+.genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 7px 10px;
+  border: 1.5px solid white;
+  border-radius: 10px;
+}
+
+.home-bottom {
+  padding: 5rem 0;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.bottoms {
+  width: 15%;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottoms > svg {
+  font-size: 40px;
+}
+
+.bottoms > :nth-child(2) {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bottoms > :nth-child(3) {
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .home-top {
+    flex-direction: column;
+  }
+
+  .home-left,
+  .home-center,
+  .home-right {
+    width: 100%;
+  }
+
+  .home-left {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-right > :nth-child(1),
+  .home-right > :nth-child(2) {
+    position: static;
+    transform: none;
+  }
+
+  .home-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .bottoms {
+    width: 70%;
+    text-align: center;
+  }
+
+  .title-search {
+    width: 50%;
+  }
+
+  .home-right {
+    padding-top: 2rem;
+  }
+}

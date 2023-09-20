@@ -1,0 +1,40 @@
+.soundimages {
+  padding-top: 2rem;
+  display: flex;
+  width: auto;
+  /* border: 2px solid red; */
+  padding-bottom: 5rem;
+}
+
+.firstImg {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstImg > :nth-child(1) {
+  position: relative;
+  z-index: -100;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.firstImg > span {
+  position: absolute;
+  font-size: 35px;
+  z-index: 1;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+.firstImg > span > strong {
+  font-weight: 800;
+}
+
+.soundimages > :nth-child(2) {
+  position: absolute;
+  right: 0;
+  border-radius: 15px;
+}

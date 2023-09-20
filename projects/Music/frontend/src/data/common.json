@@ -1,0 +1,44 @@
+[
+  {
+    "songName": "The Front Porch",
+    "genre": "Rnb",
+    "detail": "Soul Surplus1",
+    "image": "../../../public/images/singer1.jpeg",
+    "alt": "image1"
+  },
+  {
+    "songName": "Astral Lounge Beats",
+    "genre": "Rave",
+    "detail": "Royal Beats2",
+    "image": "../../../public/images/singer2.jpg",
+    "alt": "image2"
+  },
+  {
+    "songName": "The Front Porch",
+    "genre": "RnB",
+    "detail": "Digital Audio3",
+    "image": "../../../public/images/singer3.jpg",
+    "alt": "image3"
+  },
+  {
+    "songName": "Bradd Web",
+    "genre": "EDM",
+    "detail": "Soul Surplus4",
+    "image": "../../../public/images/singer1.jpeg",
+    "alt": "image4"
+  },
+  {
+    "songName": "The Front Porch",
+    "genre": "Drums",
+    "detail": "Royal Beats5",
+    "image": "../../../public/images/singer2.jpg",
+    "alt": "image5"
+  },
+  {
+    "songName": "Bradd Web",
+    "genre": "RnB",
+    "detail": "Soul Surplus6",
+    "image": "../../../public/images/singer3.jpg",
+    "alt": "image6"
+  }
+]

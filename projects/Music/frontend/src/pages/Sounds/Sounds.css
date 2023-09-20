@@ -1,0 +1,21 @@
+.sounds {
+  display: flex;
+  gap: 1rem;
+}
+
+.sounds-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 550;
+  padding-bottom: 1rem;
+}
+
+.sounds-links > li > a {
+  color: #5c5c5c;
+  font-size: 20px;
+}
+
+.sounds-links > li > a:hover {
+  color: black;
+  transition: 0.5s;
+}

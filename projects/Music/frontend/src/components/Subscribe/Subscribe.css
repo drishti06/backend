@@ -1,0 +1,72 @@
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  width: 100%;
+  /* border: 2px solid green; */
+  height: 50vh;
+}
+
+.sub-content {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-content > hr {
+  width: 100%;
+}
+
+.subscribe-top {
+  /* border: 2px solid red; */
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subscribe-top > :nth-child(2) {
+  color: rgb(160, 160, 160);
+  font-weight: 550;
+}
+
+.subscribe-bottom {
+  /* border: 2px solid green; */
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.subscribe-bottom > :nth-child(1) {
+  color: rgb(160, 160, 160);
+}
+
+.subscribe-bottom > input {
+  padding: 6px 5px;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 5px;
+}
+
+.subscribe-bottom > input::placeholder {
+  color: rgb(205, 202, 202);
+}
+
+.subscribe-bottom > button {
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.subscribe-bottom > button > a {
+  color: white;
+  font-size: 16px;
+}

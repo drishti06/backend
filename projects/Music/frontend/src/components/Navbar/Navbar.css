@@ -1,0 +1,93 @@
+nav {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  /* align-items: center; */
+  height: 8vh;
+  justify-content: space-evenly;
+}
+
+.nav-left {
+  width: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  line-height: 43.65px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo > a {
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links > li > a {
+  color: #b9babb;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nav-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  padding: 10px 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.search > input {
+  background-color: transparent;
+  border: none;
+}
+
+.search > svg {
+  color: #b9babb;
+  font-size: 18px;
+}
+
+.nav-buttons {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-buttons > button {
+  padding: 8px 15px;
+  border: none;
+}
+
+.nav-buttons > :nth-child(1) {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-buttons > :nth-child(2) {
+  border-radius: 25px;
+  background-color: #cd4848;
+  color: white;
+}

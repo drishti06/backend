@@ -1,0 +1,19 @@
+.mininav {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.mininav-red {
+  background-color: #d74664;
+  color: white;
+}
+
+.mininav-white {
+  background-color: white;
+  color: #d74664;
+  border-bottom: 1px solid gray;
+}

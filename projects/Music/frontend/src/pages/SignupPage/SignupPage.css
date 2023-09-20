@@ -1,0 +1,133 @@
+.login-content {
+  display: flex;
+}
+
+.login-left {
+  width: 62%;
+  display: flex;
+}
+
+.login-left > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-right {
+  /* border: 2px solid red; */
+  width: 25%;
+  display: flex;
+  padding-left: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.login-logo {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.google-login > :nth-child(1) {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+  flex-direction: column;
+}
+
+.google-login > :nth-child(1) > :nth-child(1) {
+  padding-bottom: 0.5rem;
+  font-size: 30px;
+  font-weight: 700;
+  color: #525252;
+}
+
+.google-icon {
+  font-size: 25px;
+}
+
+.google-login-button > button {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #eff7ff;
+  color: gray;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a1a1a1;
+}
+
+.email,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email > input,
+.password > input,
+.confirm-password > input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eff7ff;
+}
+
+.email > input::placeholder,
+.password > input::placeholder {
+  color: #d8d8d8;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.email, .password, .confirm-password {
+  padding-bottom: 2rem;
+}
+
+.forgot-password {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.forgot-password > :nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+
+.forgot-password > :nth-child(1) > :nth-child(2) {
+  color: #aaaaaa;
+}
+
+.login-btn {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.new-account {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.new-account > :nth-child(1) {
+  color: #aaaaaa;
+}
