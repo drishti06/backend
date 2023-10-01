@@ -14,7 +14,7 @@ const MediaSchema = Schema(
     music: [{ type: String }],
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
+      ref: 'Users',
     },
     image: [{ type: String, required: true }]
   },

@@ -2,7 +2,7 @@ const multer = require("multer");
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const { getAllMusic, createMusic, deleteMusic, getMusic, findAllAudiosById } = require("../controller/MediaController.js");
+const { getAllMusic, createMusic, deleteMusic, findAllAudiosById, yourAllMusic } = require("../controller/MediaController.js");
 
 const server = express();
 const router = express.Router();
@@ -61,8 +61,8 @@ const imageUpload = multer({
 
 server.use(multer);
 router.get("/allMusic", getAllMusic)
-  .get("/music", getMusic)
+  .post("/music/:id", yourAllMusic)
   .delete("/deleteMusic", deleteMusic)
   .post("/create", upload.fields([{ name: "music" }]), createMusic)
-  .post('/myaudios/:id', findAllAudiosById)
+
 module.exports = router;

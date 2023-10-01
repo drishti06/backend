@@ -13,10 +13,10 @@ exports.getAllMusic = async (req, res) => {
   }
 };
 
-exports.getMusic = async (req, res) => {
-  const { name } = req.body;
+exports.yourAllMusic = async (req, res) => {
+  const  id  = req.params.id;
   try {
-    const musics = await Media.find({ name: name });
+    const musics = await Media.find({ user:id });
     res.json(musics);
   } catch (error) {
     console.log({ errorMessageInGetmusic: error.message });
@@ -44,7 +44,7 @@ exports.createMusic = async (req, res) => {
             name,
             author,
             music: musicPaths,
-            id
+            user
           });
 
           res.status(201).json({ messasge: "music added !", createMusic });

@@ -91,7 +91,7 @@ passport.use(
 // this creates session variable req.user on being called from callbacks
 passport.serializeUser(function (user, cb) {
   process.nextTick(function () {
-    return cb(null, { id: user.id, role: user.role });
+    return cb(null, { id: user.id, role: user.role , email:user.email });
   });
 });
 

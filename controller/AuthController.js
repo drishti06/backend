@@ -11,7 +11,7 @@ exports.userLogin = async (req, res) => {
       httpOnly: true,
     })
     .status(200)
-    .json({ id: user.id, role: user.role });
+    .json({ id: user.id, role: user.role , email: user.email});
 };
 
 exports.userRegister = async (req, res) => {
