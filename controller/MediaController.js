@@ -13,6 +13,20 @@ exports.getAllMusic = async (req, res) => {
   }
 };
 
+
+exports.findAllAudiosById = async (req, res) => {
+  try {
+    const email = req.body
+    const audios = Media.find({}).populate('user', 'email')
+    if (audios) {
+      res.status(200).json({ audios })
+    }
+  } catch (error) {
+    res.status(400).json({ errorInfetchingyourMusic: error.message })
+
+  }
+}
+
 exports.yourAllMusic = async (req, res) => {
   const  id  = req.params.id;
   try {
@@ -65,10 +79,33 @@ exports.createMusic = async (req, res) => {
 
 };
 
+exports.editMusic = async(req,res) => {
+
+    try {
+        const musicId = req.params.id;
+        const { name, author } = req.body; // Assuming you send updated name and author in the request body
+
+        // Find the music by ID and update its details
+        const updatedMusic = await Media.findByIdAndUpdate(
+            musicId,
+            { name, author },
+            { new: true } // To return the updated music object
+        );
+        if (!updatedMusic) {
+            return res.status(404).json({ message: 'Music not found' });
+        }
+        res.status(200).json(updatedMusic); // Return the updated music object
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+
+}
+
 exports.deleteMusic = async (req, res) => {
-  const { name } = req.body;
+  const id  = req.body;
   try {
-    const music = await Media.findOneAndDelete({ name: name });
+    const music = await Media.findOneAndDelete(id);
     console.log("delete");
     res.status(200).json(music.name);
   } catch (error) {
@@ -76,16 +113,3 @@ exports.deleteMusic = async (req, res) => {
     res.status(400).json({ errorMessageIndeleting: error.message });
   }
 };
-
-exports.findAllAudiosById = async (req, res) => {
-  try {
-    const email = req.body
-    const audios = Media.find({}).populate('user', 'email')
-    if (audios) {
-      res.status(200).json({ audios })
-    }
-  } catch (error) {
-    res.status(400).json({ errorInfetchingyourMusic: error.message })
-
-  }
-}
