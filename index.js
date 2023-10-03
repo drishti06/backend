@@ -18,6 +18,7 @@ const path = require("path");
 const crypto = require('crypto')
 const { isAuth, sanitizeUser, cookieExtractor } = require('./services/common');
 const { env } = require('process');
+const { sendMail } = require('./controller/Mail.js');
 
 
 
@@ -112,6 +113,7 @@ async function main() {
 server.use("/auth", AuthRoutes);
 server.use("/audio", MediaRoutes);
 server.use("/user", UserRoutes)
+server.post('/mail' , sendMail)
 
 server.listen(process.env.PORT, () => {
   console.log(`server started at port ${process.env.PORT}`);
