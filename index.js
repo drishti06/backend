@@ -92,7 +92,7 @@ passport.use(
 // this creates session variable req.user on being called from callbacks
 passport.serializeUser(function (user, cb) {
   process.nextTick(function () {
-    return cb(null, { id: user.id, role: user.role , email:user.email });
+    return cb(null, { id: user.id, role: user.role, email: user.email });
   });
 });
 
@@ -113,7 +113,7 @@ async function main() {
 server.use("/auth", AuthRoutes);
 server.use("/audio", MediaRoutes);
 server.use("/user", UserRoutes)
-server.post('/mail' , sendMail)
+server.post('/mail', sendMail)
 
 server.listen(process.env.PORT, () => {
   console.log(`server started at port ${process.env.PORT}`);
